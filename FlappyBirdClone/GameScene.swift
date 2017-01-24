@@ -120,6 +120,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.speed = 0
             gameover = true
             
+            // timer must be invalidate, otherwise it will be created multiple times and bloat the scene
             timer.invalidate()
             
             gameOver.fontName = "Helvetica"
